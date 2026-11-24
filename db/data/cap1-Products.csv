@@ -1,0 +1,6 @@
+ID,productCode,productName,price,createdAt,createdBy,modifiedAt,modifiedBy
+aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa,P001,Laptop,75000.00,2026-11-17T09:00:00Z,admin,2026-11-17T09:00:00Z,admin
+bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb,P002,Monitor,25000.00,2026-11-17T09:10:00Z,admin,2026-11-17T09:10:00Z,admin
+cccccccc-cccc-cccc-cccc-cccccccccccc,P003,Keyboard,1500.00,2026-11-17T09:20:00Z,admin,2026-11-17T09:20:00Z,admin
+dddddddd-dddd-dddd-dddd-dddddddddddd,P004,Mouse,750.00,2026-11-17T09:30:00Z,admin,2026-11-17T09:30:00Z,admin
+eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee,P005,Headset,5000.00,2026-11-17T09:40:00Z,admin,2026-11-17T09:40:00Z,admin

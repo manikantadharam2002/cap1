@@ -1,0 +1,78 @@
+<mvc:View controllerName="cap1ui.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+     <Page title="Customers">
+
+        <content>
+
+            <Table
+                id="customerTable"
+                mode="SingleSelectLeft"
+                items="{/Customers}">
+
+                <headerToolbar>
+                    <Toolbar>
+
+                        <Title
+                            text="Customer List"
+                            level="H2" />
+
+                        <ToolbarSpacer />
+
+                        <Button
+                            text="Create"
+                            type="Emphasized"
+                            press=".onCreateCustomer" />
+
+                        <Button
+                            text="Edit"
+                            press=".onEditCustomer" />
+
+                        <Button
+                            text="Delete"
+                            type="Reject"
+                            press=".onDeleteCustomer" />
+
+                    </Toolbar>
+                </headerToolbar>
+
+                <columns>
+
+                    <Column>
+                        <Text text="Name" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Email" />
+                    </Column>
+
+                    <Column>
+                        <Text text="City" />
+                    </Column>
+
+                </columns>
+
+                <items>
+
+                    <ColumnListItem>
+
+                        <cells>
+
+                            <Text text="{name}" />
+
+                            <Text text="{email}" />
+
+                            <Text text="{city}" />
+
+                        </cells>
+
+                    </ColumnListItem>
+
+                </items>
+
+            </Table>
+
+        </content>
+
+    </Page>
+</mvc:View>

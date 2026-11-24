@@ -1,0 +1,211 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### Customers
+# @name Customers_GET
+GET {{server}}/odata/v4/catalog/Customers
+Authorization: Basic {{username}}:{{password}}
+
+
+### Customers
+# @name Customers_POST
+POST {{server}}/odata/v4/catalog/Customers
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+ 
+  "name": "aaaaaaaaaasdfghaaa",
+  "email": "abcdefgh@gmail",
+  "city": "cidfghty-16534436"
+}
+
+
+### Customers
+# @name Customers_PATCH
+PATCH {{server}}/odata/v4/catalog/Customers/16534436-664d-4b08-b388-9e8efff0121a
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "16534436-664d-4b08-b388-9e8efff0121a",
+  "name": "abc",
+  "email": "email-16534436",
+  "city": "city-16534436"
+}
+
+
+### Customers
+# @name Customers_DELETE
+DELETE {{server}}/odata/v4/catalog/Customers/16534436-664d-4b08-b388-9e8efff0121a
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Orders
+# @name Orders_GET
+GET {{server}}/odata/v4/catalog/Orders
+Authorization: Basic {{username}}:{{password}}
+
+
+### Orders
+# @name Orders_POST
+POST {{server}}/odata/v4/catalog/Orders
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "632025b6-8e5d-4ede-bfd1-b4742a434a78",
+  "orderNo": "orderNo-632025",
+  "orderDate": "2020-01-08",
+  "customer": {
+    "ID": "16534436-664d-4b08-b388-9e8efff0121a"
+  },
+  "items": [
+    {
+      "ID": "7040261f-b39b-426a-a468-461d646bf47d",
+      "quantity": 64,
+      "price": 679427895113.89,
+      "product": {
+        "ID": "35098824-97e6-4d56-9d20-ff93b6742db9"
+      }
+    },
+    {
+      "ID": "70402628-9adc-4236-85aa-b14501b111d7",
+      "quantity": 94,
+      "price": 512242863794.87,
+      "product": {
+        "ID": "35098824-97e6-4d56-9d20-ff93b6742db9"
+      }
+    }
+  ]
+}
+
+
+### Orders
+# @name Orders_PATCH
+PATCH {{server}}/odata/v4/catalog/Orders/632025b6-8e5d-4ede-bfd1-b4742a434a78
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "632025b6-8e5d-4ede-bfd1-b4742a434a78",
+  "orderNo": "orderNo-632025",
+  "orderDate": "2020-01-08",
+  "customer": {
+    "ID": "16534436-664d-4b08-b388-9e8efff0121a"
+  },
+  "items": [
+    {
+      "ID": "7040261f-b39b-426a-a468-461d646bf47d",
+      "quantity": 64,
+      "price": 679427895113.89,
+      "product": {
+        "ID": "35098824-97e6-4d56-9d20-ff93b6742db9"
+      }
+    },
+    {
+      "ID": "70402628-9adc-4236-85aa-b14501b111d7",
+      "quantity": 94,
+      "price": 512242863794.87,
+      "product": {
+        "ID": "35098824-97e6-4d56-9d20-ff93b6742db9"
+      }
+    }
+  ]
+}
+
+
+### Orders
+# @name Orders_DELETE
+DELETE {{server}}/odata/v4/catalog/Orders/632025b6-8e5d-4ede-bfd1-b4742a434a78
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### OrderItems
+# @name OrderItems_GET
+GET {{server}}/odata/v4/catalog/OrderItems
+Authorization: Basic {{username}}:{{password}}
+
+
+### OrderItems
+# @name OrderItems_POST
+POST {{server}}/odata/v4/catalog/OrderItems
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "7040261f-b39b-426a-a468-461d646bf47d",
+  "quantity": 64,
+  "price": 679427895113.89,
+  "product": {
+    "ID": "35098824-97e6-4d56-9d20-ff93b6742db9"
+  }
+}
+
+
+### OrderItems
+# @name OrderItems_PATCH
+PATCH {{server}}/odata/v4/catalog/OrderItems/7040261f-b39b-426a-a468-461d646bf47d
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "7040261f-b39b-426a-a468-461d646bf47d",
+  "quantity": 64,
+  "price": 679427895113.89,
+  "product": {
+    "ID": "35098824-97e6-4d56-9d20-ff93b6742db9"
+  }
+}
+
+
+### OrderItems
+# @name OrderItems_DELETE
+DELETE {{server}}/odata/v4/catalog/OrderItems/7040261f-b39b-426a-a468-461d646bf47d
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Products
+# @name Products_GET
+GET {{server}}/odata/v4/catalog/Products
+Authorization: Basic {{username}}:{{password}}
+
+
+### Products
+# @name Products_POST
+POST {{server}}/odata/v4/catalog/Products
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "35098824-97e6-4d56-9d20-ff93b6742db9",
+  "productCode": "productCode-3509882",
+  "productName": "productName-3509882",
+  "price": 2865130484511.81
+}
+
+
+### Products
+# @name Products_PATCH
+PATCH {{server}}/odata/v4/catalog/Products/35098824-97e6-4d56-9d20-ff93b6742db9
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "35098824-97e6-4d56-9d20-ff93b6742db9",
+  "productCode": "productCode-3509882",
+  "productName": "productName-3509882",
+  "price": 2865130484511.81
+}
+
+
+### Products
+# @name Products_DELETE
+DELETE {{server}}/odata/v4/catalog/Products/35098824-97e6-4d56-9d20-ff93b6742db9
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
